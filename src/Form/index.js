@@ -1,12 +1,12 @@
 import "./style.css";
 
-const Form = (props) =>(
+const Form = () => (
     <form className="form">
 
-            <input className="form__taskContent" autoFocus placeholder="Co jest do zrobienia?" />
-            <button className="form__addTasks">Dodaj zadanie</button>
+        <input className="form__taskContent" autoFocus placeholder="Co jest do zrobienia?" />
+        <button className="form__addTasks">Dodaj zadanie</button>
 
-        </form>
+    </form>
 );
 
-export default Form;
+export default Form; 
