@@ -6,9 +6,9 @@ import Header from "./Header";
 import Container from "./Container";
 
 
-const tasks =[
-  {id:1, content: " zjesc śniadanie", done: false},
-  {id:2, content: " zatankować auto", done: true},
+const tasks = [
+  { id: 1, content: " zjesc śniadanie", done: false },
+  { id: 2, content: " zatankować auto", done: true },
 ];
 
 const hideDoneTasks = false;
@@ -16,19 +16,19 @@ const hideDoneTasks = false;
 function App() {
   return (
     <Container>
-    <Header title="Lista zadań"/>
-    
-    <Section 
-    title="Dodaj nowe zadanie" 
-    body={<Form/>}/>
-   
-<Section 
-title="Lista zadań"
-body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks}/>}
-extraHeaderContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks}/>}
-    />
+      <Header title="Lista zadań" />
 
-</Container>
+      <Section
+        title="Dodaj nowe zadanie"
+        body={<Form />} />
+
+      <Section
+        title="Lista zadań"
+        body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+        extraHeaderContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+      />
+
+    </Container>
   );
 }
 
